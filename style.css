@@ -1,0 +1,233 @@
+/*font-family: "Cormorant", serif;*/
+/*font-family: "Inter", sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------HEADER----------*/
+.header{
+    position: fixed;
+    background: #F7F2EA;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 0px 29px -11px rgba(0,0,0,0.6);
+}
+
+.header .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+}
+
+.menu__link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo img {
+    height: 40px; 
+    display: block;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 20px; 
+}
+/*----------HEADER----------*/
+
+.top{
+    background-image: url("images/home/cityviews.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    justify-content: center;
+    height: 70vh;
+    max-height: 600px;
+}
+
+.top__inner{
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+.top__text{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+}
+
+.main{
+    padding-top: 60px;
+}
+
+.blockquote{
+    text-align: center;
+    font-family: "Cormorant", serif;
+    font-style: italic;
+    font-size: 35px;
+    max-width: 800px;
+    margin:  100px auto;
+    line-height: normal;
+}
+
+.explore{
+    justify-content: center;
+    text-align: center;
+    font-family: "Open Sans", serif;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-collapse: separate; 
+    border-spacing: 30px;
+    width: 50%;
+
+ }
+
+.explore__card{ 
+    text-align: center;
+    background: #F7F2EA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.explore__img{
+    padding: 20px 20px;
+}
+
+.explore__name {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.explore__link{
+    text-decoration: none;
+    font-size: large;
+    margin-bottom: 20px; 
+}
+
+/*----------FOOTER----------*/
+footer {
+    background-color: #F7F2EA; 
+    padding: 20px 10px; 
+    border-top: 1px solid #ddd; 
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: relative;
+    height: 150px; 
+}
+
+.footer__left,
+.footer__right {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    flex: 1;
+}
+
+.footer__left img {
+    max-height: 100px;  
+}
+
+.footer__right p {
+    margin: 5px 0;  
+    text-align: center; 
+}
+
+.footer__center {
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 12px; 
+    color: #666; 
+}
+/*----------FOOTER----------*/
+
+
+/* General media query for screens smaller than 768px (tablet size) */
+@media screen and (max-width: 768px) {
+    /* Header Adjustments */
+    .menu__list {
+        flex-wrap: wrap;
+        gap: 10px; /* Reduce spacing between menu items */
+    }
+
+    .menu__link {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .logo img {
+        height: 30px; /* Adjust logo size */
+    }
+
+    /* Top Section Adjustments */
+    .top__text {
+        font-size: 30px; /* Reduce font size */
+    }
+
+    /* Blockquote Adjustments */
+    .blockquote {
+        font-size: 25px; /* Scale down blockquote text */
+        padding: 0 10px; /* Add side padding for smaller screens */
+    }
+
+    /* Explore Section Adjustments */
+    .explore table {
+        display: block; /* Allow stacking */
+    }
+
+    .explore table tr {
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+    }
+
+    .explore table td {
+        width: 100%; /* Full width for cards */
+        padding-bottom: 20px; /* Add spacing between cards */
+    }
+}
+
+/* Further adjustments for screens smaller than 480px (mobile size) */
+@media screen and (max-width: 480px) {
+    .menu__link {
+        font-size: 14px; /* Reduce font size further */
+    }
+
+    .top__text {
+        font-size: 24px; /* Scale down hero text */
+    }
+
+    .blockquote {
+        font-size: 20px; /* Smaller blockquote text for mobile */
+    }
+}
