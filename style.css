@@ -17,7 +17,7 @@
     box-shadow: 0px 0px 29px -11px rgba(0,0,0,0.6);
 }
 
-.header .header__inner {
+.header__inner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,6 +69,32 @@
 
 main{
     padding-top: 60px;
+}
+
+/*media of header*/
+@media screen and (max-width: 768px) {
+    .menu__list {
+        flex-wrap: wrap;
+        gap: 10px; 
+    }
+
+    .main{
+        padding-top: 30px;
+    }
+
+    .menu__link {
+        font-size: 16px; 
+    }
+
+    .logo img {
+        height: 30px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu__link {
+        font-size: 14px; 
+    }
 }
 /*----------HEADER----------*/
 
@@ -227,63 +253,46 @@ footer {
 
 
 
-
-
-/* General media query for screens smaller than 768px (tablet size) */
-@media screen and (max-width: 768px) {
-    /* Header Adjustments */
-    .menu__list {
-        flex-wrap: wrap;
-        gap: 10px; /* Reduce spacing between menu items */
-    }
-
-    .menu__link {
-        font-size: 16px; /* Reduce font size */
-    }
-
-    .logo img {
-        height: 30px; /* Adjust logo size */
-    }
-
-    /* Top Section Adjustments */
-    .top__text {
-        font-size: 30px; /* Reduce font size */
-    }
-
-    /* Blockquote Adjustments */
-    .blockquote {
-        font-size: 25px; /* Scale down blockquote text */
-        padding: 0 10px; /* Add side padding for smaller screens */
-    }
-
-    /* Explore Section Adjustments */
+@media screen and (max-width: 936px) {
     .explore table {
-        display: block; /* Allow stacking */
+        display: block; 
+        margin: 0 auto; 
+        width: 80%;
+        max-width: 600px; 
     }
 
     .explore table tr {
         display: flex;
-        flex-direction: column; /* Stack cards vertically */
+        flex-direction: column; 
         align-items: center;
+        text-align: center;
     }
 
     .explore table td {
-        width: 100%; /* Full width for cards */
-        padding-bottom: 20px; /* Add spacing between cards */
+        width: 100%; 
+        padding-bottom: 20px; 
     }
 }
 
-/* Further adjustments for screens smaller than 480px (mobile size) */
-@media screen and (max-width: 480px) {
-    .menu__link {
-        font-size: 14px; /* Reduce font size further */
-    }
-
+@media screen and (max-width: 768px) {
     .top__text {
-        font-size: 24px; /* Scale down hero text */
+        font-size: 30px; 
     }
 
     .blockquote {
-        font-size: 20px; /* Smaller blockquote text for mobile */
+        font-size: 25px; 
+        padding: 0 10px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+
+    .top__text {
+        font-size: 24px; 
+    }
+
+    .blockquote {
+        font-size: 20px; 
     }
 }
