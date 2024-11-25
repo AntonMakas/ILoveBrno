@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------HEADER----------*/
+.header{
+    position: fixed;
+    background: #F7F2EA;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 0px 29px -11px rgba(0,0,0,0.6);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 50px;
+}
+
+.menu__item{
+    transition: transform 0.3s ease;
+}
+
+.menu__item:hover{
+    transform: scale(1.1);
+}
+
+.menu__link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo img {
+    height: 40px; 
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 20px; 
+}
+
+main{
+    padding-top: 60px;
+    font-family: "Open Sans", serif;
+}
+
+/*media of header*/
+@media screen and (max-width: 768px) {
+    .menu__list {
+        flex-wrap: wrap;
+        gap: 10px; 
+    }
+
+    .main{
+        padding-top: 30px;
+    }
+
+    .menu__link {
+        font-size: 16px; 
+    }
+
+    .logo img {
+        height: 30px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu__link {
+        font-size: 14px; 
+    }
+}
+/*----------HEADER----------*/
+
+
+.label__text{
+    margin: 50px auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.label__text h1{
+    margin-bottom: 10px;
+}
+
+.label__text p{
+    max-width: 60%; 
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.accomodation {
+    margin: 50px auto;
+    width: 70%; 
+}
+
+.accomodation a{
+    text-decoration: none;
+}
+
+.accomodation h2 {
+    text-align: left;
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    color: #333;
+}
+
+.accomodation ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0 auto;
+    margin-bottom: 20px;
+    gap: 20px;
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+}
+
+.first__ul {
+    grid-template-columns: 1fr 1fr 1fr; 
+    margin-bottom: 20px;
+    gap: 20px; 
+}
+
+.second__ul {
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+.accomodation li {
+    text-align: center; 
+    background-color: #F7F2EA; 
+    border: 1px solid #ddd;
+    padding: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.accomodation li:hover {
+    transform: scale(1.05); 
+}
+
+.accomodation li img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.accomodation li h4 {
+    margin: 5px 0; 
+    font-size: 18px;
+    color: #444;
+}
+
+.accomodation li p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+
+.transport{
+    background: #F7F2EA;
+    margin: 80px 0;
+    padding: 40px 0;
+}
+
+.transport h2{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.table__transport{
+    max-width: 70%;
+    margin: 0 auto;
+    border-spacing: 20px;
+}
+
+.transport td{
+    background: #C4C4C4;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.table__transport h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.publictransport__inner{
+    display: inline-flex;
+}
+
+.publictransport__inner img{
+    margin-right: 30px;
+    border: 2px solid rgb(107, 107, 107);
+}
+
+.publictransport__inner p{
+    margin-bottom: 30px;
+}
+
+.publictransport__inner div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.publictransport__inner a.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #DD2E44;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.publictransport__inner a.button:hover{
+    background-color: #b92e41;
+}
+
+.taxi__inner {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.taxi__inner a, .bicycle__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333; 
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 24px;
+}
+
+.taxi__inner a:hover, .bicycle__link:hover {
+    transform: scale(1.05); 
+    color: #DD2E44; 
+}
+
+.taxi__inner img, .bicycle__img {
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+}
+
+
+/*----------FOOTER----------*/
+footer {
+    background-color: #F7F2EA; 
+    padding: 20px 10px; 
+    border-top: 1px solid #ddd; 
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: relative;
+    height: 150px; 
+}
+
+.footer__left,
+.footer__right {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    flex: 1;
+    font-family: "Open Sans", serif;
+}
+
+.footer__left img {
+    max-height: 100px;  
+}
+
+.footer__right p {
+    margin: 5px 0;  
+    text-align: center; 
+}
+
+.footer__center {
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 12px; 
+    color: #666; 
+}
+/*----------FOOTER----------*/
+
+
+
+@media (max-width: 1024px) {
+    .table__transport {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .table__transport {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .table__transport td {
+        display: block; 
+        margin-bottom: 20px;
+    }
+
+    .publictransport__inner {
+        display: block;
+        text-align: center; 
+    }
+
+    .publictransport__inner img {
+        margin: 0 auto 20px;
+    }
+
+    .taxi__inner {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .bicycle__link {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .transport {
+        padding: 20px 0; 
+    }
+
+    .transport h2 {
+        font-size: 24px; 
+    }
+
+    .table__transport h3 {
+        font-size: 20px; 
+    }
+
+    .publictransport__inner p {
+        font-size: 16px; 
+    }
+
+    .publictransport__inner a.button {
+        font-size: 16px;
+        padding: 8px 16px; 
+    }
+
+    .taxi__inner img, .bicycle__img {
+        width: 60px; 
+        height: auto;
+    }
+
+    .taxi__inner a p, .bicycle__link p {
+        font-size: 16px; 
+    }
+}
